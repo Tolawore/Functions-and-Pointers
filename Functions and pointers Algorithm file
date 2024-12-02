@@ -1,0 +1,29 @@
+Goal:
+To input the names and grades of two students.
+To validate the grades (check if any are negative).
+To sort the grades in ascending order.
+To print the sorted grades or display an error if invalid grades are detected.
+
+Input(s):
+Names of Students: Two strings, firstStudentName and secondStudentName.
+Grades of the First Student: An integer array arr1 with a maximum size defined by ARR1_MAX.
+Grades of the Second Student: An integer array arr2 with a maximum size defined by ARR2_MAX.
+
+Output(s):
+Sorted Grades or Error Message: For each student, either their sorted grades or an error message if any grade is negative.
+
+Steps:
+Prompt for Input: Request the names and grades for two students.
+The program mistakenly requests the first student's name twice due to a typo.
+Input Validation: Check each array of grades to ensure there are no negative values.
+If negative grades are found, set a flag indicating invalid input.
+Sorting: If the grades are valid, sort them in ascending order using the sort function. This function uses a basic bubble sort algorithm and a customSwap function to reorder the elements.
+Output: Print the sorted grades for each student. If invalid grades (negative numbers) are detected, print an error message instead.
+
+Notes:
+The program has a bug in the getInput function, where firstStudentName and secondStudentName are each read twice instead of reading the name and then the grades.
+The array sizes ARR1_MAX and ARR2_MAX are constants, determining the number of grades to be input for each student.
+The containsNegative function is used to check for negative grades.
+Sorting is done using the sort function, which implements a bubble sort algorithm.
+The customSwap function is used by the sort function to swap elements.
+The final output is produced by the print function, which either prints the sorted grades or an error message based on the validation results.
